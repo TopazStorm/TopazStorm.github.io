@@ -1,0 +1,49 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the header banner */
+header {
+    background-color: #333; /* Set your desired background color */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+}
+
+/* Style for the hamburger bars */
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the hamburger bars */
+.menu-icon:hover .bar {
+    background-color: #ffc107; /* Change to your desired hover color */
+}
+
+/* Style for the banner text */
+.banner {
+    flex-grow: 1;
+    text-align: center; /* Center-align the text */
+}
+
+/* Style for main content */
+main {
+    padding: 20px;
+}
