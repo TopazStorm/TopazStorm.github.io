@@ -37,6 +37,23 @@ header {
     background-color: #ffc107; /* Change to your desired hover color */
 }
 
+/* Style for the menu */
+.menu {
+    list-style: none;
+        display: flex;
+        }
+
+        /* Style for each menu item */
+        .menu li {
+            margin-right: 15px; /* Adjust the spacing between menu items */
+            }
+
+            /* Style for menu links */
+            .menu li a {
+                text-decoration: none;
+                    color: white;
+                    }
+
 /* Style for the banner text */
 .banner {
     flex-grow: 1;
