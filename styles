@@ -56,7 +56,7 @@ header {
 
 /* Style for each menu item */
 .menu li {
-    margin-right: 15px; /* Adjust the spacing between menu items */
+    margin-left: 15px; /* Adjust the spacing between menu items */
 }
 
 /* Style for menu links */
