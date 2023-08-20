@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Playful Pup Game Guides</title>
+    <title>Your Game Guides Website</title>
 </head>
 <body>
-
-    <header class="banner">
-        <h1 id="website-title">Your Game Guides Website</h1>
+    <header>
+        <h1>Your Game Guides Website</h1>
     </header>
 
     <main>
-        <section class="featured-game">
-            <!-- Featured game content -->
-        </section>
-
-        <section class="main-content">
-            <!-- Main content for the selected game -->
-        </section>
+        <div class="game-title">
+            <h2 id="game-name">Game Name</h2>
+        </div>
+        <div class="content">
+            <p>This is the content for the selected game.</p>
+        </div>
     </main>
 
-    <footer class="game-list">
-        <ul class="column">
-            <li><a href="#https://topazstorm.github.io/dungeonvillage2/">Dungeon Village 2</a></li>
-            <li><a href="#">Game B</a></li>
-            <li><a href="#">Game C</a></li>
-            <li><a href="#">Game D</a></li>
+    <footer>
+        <ul class="game-list">
+            <li><a href="https://topazstorm.github.io/dungeonvillage2/" class="game-link" data-game="Dungeon Village 2">Dungeon Village 2</a></li>
+            <li><a href="#" class="game-link" data-game="Game B">Anime Studio Story</a></li>
+            <!-- Add more game links as needed -->
         </ul>
-        <ul class="column">
-            <li><a href="#">Game E</a></li>
-            <li><a href="#">Game F</a></li>
-            <li><a href="#">Game G</a></li>
-            <li><a href="#">Game H</a></li>
+        <ul class="game-list">
+            <li><a href="#" class="game-link" data-game="Game C">Basketball Club Story</a></li>
+            <li><a href="#" class="game-link" data-game="Game D">Beastie Bay DX</a></li>
+            <!-- Add more game links as needed -->
         </ul>
-        <!-- Add more columns as needed -->
+                <ul class="game-list">
+            <li><a href="#" class="game-link" data-game="Game C">Biz Builder Delux</a></li>
+            <li><a href="#" class="game-link" data-game="Game D">Boxing Gym Story</a></li>
+            <!-- Add more game links as needed -->
+        </ul>
     </footer>
 
     <script src="scripts.js"></script>
