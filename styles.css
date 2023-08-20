@@ -32,17 +32,22 @@ main {
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.game-list ul {
+.column {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
 }
 
-.game-list ul li {
+.column li {
     margin-bottom: 10px;
 }
 
-.game-list a {
+.column a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
