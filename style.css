@@ -1,13 +1,20 @@
 
 /*Border */
 table, th, td {
-	border-style: solid;
+	border-style: inset;
     border-color: green;
 	}
 	
 /*Header1*/
 h1 {
 	color: red;
+	text-align: center;
+}
+
+/*Header5*/
+h5 {
+	color: pink;
+	text-align: center;
 }
 
 /*Table Titles*/
@@ -16,6 +23,19 @@ th {
 }
 
 /*Table Data*/
-td {
+tbody td {
+	padding: 8px;
+	vertical-align: center;
+	horizontal-align: center;
 	color: purple;
+}
+
+/*whole table not sure it's doing anything*/
+table {
+	table-layout: fixed;
+}
+
+/*Table Row Alternate Color*/
+tbody tr:nth-child(even) {
+	background-color: yellow;
 }
