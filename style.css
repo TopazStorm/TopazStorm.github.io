@@ -32,7 +32,7 @@ tbody td {
 
 /*whole table not sure it's doing anything*/
 table {
-	table-layout: fixed;
+	table-layout: center;
 }
 
 /*Table Row Alternate Color*/
