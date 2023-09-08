@@ -1,0 +1,21 @@
+
+/*Border */
+table, th, td {
+	border-style: solid;
+    border-color: green;
+	}
+	
+/*Header1*/
+h1 {
+	color: red;
+}
+
+/*Table Titles*/
+th {
+	color: blue;
+}
+
+/*Table Data*/
+td {
+	color: purple;
+}
