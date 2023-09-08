@@ -1,3 +1,14 @@
+/*whole table not sure it's doing anything*/
+table {
+	table-layout: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Table Row Alternate Color*/
+tbody tr:nth-child(even) {
+	background-color: yellow;
+}
 
 /*Border */
 table, th, td {
@@ -28,15 +39,4 @@ tbody td {
 	vertical-align: center;
 	horizontal-align: center;
 	color: purple;
-}
-
-/*whole table not sure it's doing anything*/
-table {
-	table-layout: center;
-	margin: 0 auto;
-}
-
-/*Table Row Alternate Color*/
-tbody tr:nth-child(even) {
-	background-color: yellow;
 }
