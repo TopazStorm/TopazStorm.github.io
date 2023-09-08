@@ -33,6 +33,7 @@ tbody td {
 /*whole table not sure it's doing anything*/
 table {
 	table-layout: center;
+	margin: 0 auto;
 }
 
 /*Table Row Alternate Color*/
