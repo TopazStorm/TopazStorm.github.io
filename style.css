@@ -1,19 +1,7 @@
-/*whole table not sure it's doing anything*/
-table {
-	table-layout: center;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-/*Table Row Alternate Color*/
-tbody tr:nth-child(even) {
-	background-color: yellow;
-}
-
-/*Border */
+/*Border for table, th, td*/
 table, th, td {
-	border-style: inset;
-    border-color: green;
+	border: 2px inset green;
 	}
 	
 /*Header1*/
@@ -35,8 +23,19 @@ th {
 
 /*Table Data*/
 tbody td {
-	padding: 8px;
-	vertical-align: center;
-	horizontal-align: center;
+	padding: 5px;
+	vertical-align: middle;
+	text-align: center;
 	color: purple;
+}
+
+/*whole table not sure it's doing anything*/
+table {
+	table-layout: fixed;
+	margin: 0 auto;
+}
+
+/*Table Row Alternate Color*/
+tbody tr:nth-child(even) {
+	background-color: yellow;
 }

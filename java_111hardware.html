@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+<title>Basic Computer Concepts: Xyliea's Notes</title>
+</head>
+  <body>
+<div id="111Hardware">
+  <h4>1.1.1 Hardware;</h4>
+  <p>A computer typically contains the following components:</p>
+  <ul>
+    <li>A CPU, Central Processing Unit, which executes the instructions of a program</li>
+    <li>A Memory Unit, which holds the instructions and data of a program while it's executing</li>
+    <li>A Hard Disk, to store programs and data so they can be loaded into memory, and accessed by the CPU</li>
+    <li>A Keyboard, input of data</li>
+    <li>A Monitor, display output from a program</li>
+    <li>An Ethernet Port, wireless networking transceiver for connecting to the internet or LAN (Local Area Network)</li>
+    <li>Other Components, like video card, disc drive</li>
+  </ul>
+  <p>Example: Your at Future Shop and see a PC with the following specs;</p>
+  <ul>
+    <li>3.4 GHz Intel Core i3.3240 processor</li>
+    <li>Touch Screen</li>
+    <li>3 MB of cache memory</li>
+    <li>8 GB RAM (Random Access Memory)</li>
+    <li>1 TB (Terabyte) hard disk</li>
+  </ul>
+  <p>The Intel Core i3.3240 is the CPU. Other processors (CPU) in personal computers and servers include AMD Athlon, Oracle SPARC, and the IBM POWER processor.</p>
+  <p>CPUs consist of an Arithmetic Logic Unit (ALU) - also called an Integer Unit (IU), which performs basic integer arithmetic and logical operations: a Floating Point Unit (FPU), which performs floating-point arithmetic - a set of hardware registers for holding data and memory addresses and other supporting hardware, including a control unit to sequence the instructions. Each CPU comes with its own set of instructions, the operations it can perform. The instructions typically perform arithmetic and logic operations, move data from one location to another, and change the flow of the program (which is run next)</p>
+  <p>A program consists of many instructions. The first step in executing a program is loading it into memory. Each instruction in the program is executed by using a Fetch-Decode-Execute Cycle. The Program Counter keeps trackof the next instruction to be fetched. The CPU fetches the next instrction from memory and places it into the Instruction Register. The instruction is decoded (move, load, store, other?), then the instrction is executed.This Fetch-Decode-Execute Cycle continus until the program ends</p>
+  <p>The speed of a CPU is related to its clock cycle, typically rated in GHz (Gigahertz). This clock speed, measured in clock cycles per second, determines how fast a processor can perform operations such as fetching , decoding, and executing instructions. A CPU rated at 2.5 GHz executes 2.5 billion clock cycles a second. Current RISC processors feature pipelining, which allows the CPU to process several instructions at once, so while one instruction is executing, the processor can decode the next instructions and fetch the next instruction after that. This greatly improves performance of applications</p>
+  <p>Memory or storage devices, such as L2 Cache, memory or hard disks are typically rated in terms of their capacity, expressed in bytes. A byte is eight binary digits, or bits. A single bit's value is 0 or 1. Depending on the type of memory or storage device, the capacity will be stated in kilobytes, megabytes, gigabytes, or even terabytes. the sizes of these units are shown below;</p>
+</div>
+
+<div id="Memory Units and Sizes">
+  <h1>Memory Units and Their Sizes</h1>
+  <table>
+  	<tr>
+  	  <th>Memory Unit</th>
+  	  <th>Size</th>
+      </tr>
+      
+      <tr>
+      	<td>KB, Kbytes, kilobytes</td>
+          <td>About 1,000 bytes (exactly 2¹⁰ or 1,024 bytes)</td>
+       </tr>
+       
+       <tr>
+         <td>MB, Mbytes, megabytes</td>
+         <td>About 1 million bytes (exactly 2²⁰ 1,048,576 bytes)</td>
+       </tr>
+       
+       <tr>
+       	<td>GB, Gbytes, gigabytes</td>
+           <td>About 1 billion bytes (exactly 2³⁰ or 1,073,741,824 bytes)</td>
+       </tr>
+       
+       <tr>
+           <td>TB, Tbytes, terabyte</td>
+           <td>About 1 trillion bytes (exactly 2⁴⁰ or 1.09951 x 10¹² bytes)</td>
+       </tr>
+  </table>
+</div>
+
+<div id="Hardware take 2">
+  <p>For the CPU to execute at its rated speed, however, instructions and data must be available to the CPU at that speed as well. Instruction and data come directly from the L1 cache, which is memory directly located on the CPU chip. since the L1 cache is located on the CPU chip, it runs at the same speed as the  CPU. However, the L1 cache, which can be several Mbytes, is typically much smaller than main memory, and eventually the CPU will need to process more instructions and data then can be held in the L1 cache at one time.</p>
+  <p>At that point, the CPU typically brings data from what is called the L2 cache, which is located on separate memory chips connected to the CPU. a typical speed for the L2 cache would be a few nanoseconds (billionths of a second) access time, and this will considerably slow down the rate at which the CPU can execute instructions. L2 cache size today is typically 3 to 8 Mbytes, and again, the CPU will eventually need more space for instructions and data than the L2 cache can hold at one time.</p>
+  <p>At that point, the CPU will bring data and instructions from main memory, also located outside, but connected to the CPU chip. this will slow down the CPU even more, because main memory typically has an access time of about 20 to 50 nanoseconds. Main memory though, is significantly larger in size than the L1 and L2 caches, typically anywhere between 3 and 8 Gbytes. when the CPU runs out of space again, it will have to get its data from the hard disk, which is typically 1 Tbyte or more, but with an access time in the milliseconds (thousandths of a second) range.</p>
+  <p>As you can see from these numbers, a considerable amount of speed is lost when the CPU goes from main memory to disk, which is why having sufficient memory is very important for the overall performance of applications.</p>
+  <p>Another factor that should be taken into consideration is cost per Kbyte. Typically the cost per kilobyte decreases significantly stepping down from L2 cache to hard disk, so high performance is often traded for low price.</p>
+  <p>Main memory (also called RAM) uses DRAM, or Dynamic Random Access Memory technology, which maintains data only when power is applied to the memory and needs to be refreshed regularly in order to retain data. the L1 and L2 caches use SRAM, or Static Random Access Memory technology, which also needs power but does not need to be refreshed in order to retain data. Memory capacities are typically stated in powers of 2. for instance, 256 Kbytes of memory is 2(upscript?)18(/u) bytes, or 262,144 bytes.</p>
+  <p>Memory chips contain cells, each cell containing a bit, which can store either a 0 or a 1. Cells can be accessed individually or in a group of typically 4, 8, or 16 cells. for instance, a 32-Kbit RAM chip organized as 8K x 4 is composed of exactly 2(upscript)13(/) or 8,192 units, each unit containing four cells. This RAM chip will have four data output pins (or lines) and 13 access pins (or lines), enabling access to all 8,192 units because each access pin can have a value of 0 or 1. the table below compares the features of various memory types.</p>
+</div>
+
+<div id="Comparison Memory Types">
+<h1>Comparison of Memory Types</h1>
+  <table>
+      <tr>
+        <th>Device</th>
+        <th>Location</th>
+        <th>Type</th>
+        <th>Speed</th>
+        <th>Capacity (MB)</th>
+        <th>Cost/KB</th>
+      </tr>
+      <tr>
+        <td>L1 Cache</td>
+        <td>On-Chip</td>
+        <td>SRAM</td>
+        <td>Very Fast</td>
+        <td>Very Small</td>
+        <td>Very High</td>
+      </tr>
+      <tr>
+        <td>L2 Cache</td>  
+        <td>Off-Chip</td>
+        <td>SRAM</td>
+        <td>Fast</td>
+        <td>Small</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Memory</td>  
+        <td>Off-Chip</td> 
+        <td>DRAM</td>  
+        <td>Moderate</td>  
+        <td>Moderate</td>  
+        <td>Moderate</td>  
+      </tr>
+      <tr>
+        <td>Hard Disk</td>  
+        <td>Separate</td>  
+        <td>Disk Media</td>  
+        <td>Slow</td>  
+        <td>Large</td>  
+        <td>Small</td>  
+      </tr>
+    </table>
+</div>
+
+</body>
+</html>
