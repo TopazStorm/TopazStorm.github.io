@@ -1,0 +1,62 @@
+as mentioned earlier a CPU understands only binary numbers, whose digits consists of other zero or one. all data is stored in a computer's memory is binary digits. a bit holds one binary digit. a bite holds eight binary digits.
+
+binary numbers are expressed in the base 2 system, because there are only two values in that system, 0 and 1. by contrast most people are used to the decimal, or base 10, system which uses the value 0 through 9.
+
+there are other number systems, such as the octal, or base 8 system, which uses the digits from 0 to 7, and the hexadecimal, or base 16, system, which uses the digits 0 to 9 and the letters a to f.
+
+as we know it in the decimal system, the number 359 is composed of the following three digits:
+three, representing the hundreds, or 10 to the power of 2
+five, representing the tens, or 10 to the 1
+9, representing the ones, or 10 to the zero
+therefore we can write $359 as
+359 = 3 * 10 ^ 2 + 5 * 10 ^ 1 + 9 * 10 ^ 0
+thus the decimal number 359 is written as a linear combination of powers of 10 with coefficients from the base 10 alphabet, that is, the digits from 0 to 9. similarly, the binary number 11011 is written as a linear combination of powers of 2 with coefficients from the base to alphabet, that is, the digits 0 and 1.
+
+for example the binary number 11011 can be written as
+11,011 equals 1 * 2 ^ 4 + 1 * 2 ^ 3 + 0 * 2 ^ 2 + 1 * 2 ^ 1 + 1 * 2 ^ 0
+
+the table below lists the binary equivalence for the decimal numbers 0 through 8, well the table following it lists the decimal equivalents of the first 15 powers of 2.
+
+insert the first table
+
+insert the second table
+
+notebook in the first table above as we count an increments of one, the last digit alternates between 0 and 1. in fact we can see that for even numbers, the last digit is always zero and for odd numbers, the last digit is always one
+
+because computer store numbers is binary, and people recognize numbers as decimal values, conversion between the decimal and binary number systems often takes place inside a computer
+
+let's try a few conversions. to convert a binary number to a decimal number, multiply each digit in the binary number by two position negative 1, counting the rightmost position as position 1 and moving left through the binary number. then add the products together
+using this method let's calculate the equivalent of the binary number 11010 in our decimal system
+11,010 equals 1 * 2 ^ 4 + 1 * 2 ^ 3 + 0 * 2 ^ 2 + 1 * 2 ^ 1 + 0 * 2 ^ 0
+equals 16 + 8 + 0 + 2 + 0
+equals 26
+
+now let's excitement how to convert a decimal number to a binary number. let's convert the decimal number 359 into its binary number equivalent. as we can see from the way we rewrote 11011, a binary number can be written as a sum of powers of 2 with coefficient 0 and 1
+
+the strategy to decompose a decimal number into a sum of powers of two is simple colon first find the largest power of 2 that is smaller than or equal to the decimal number, subtract that number from the decimal number, then do the same with the remainder, and so on until you reach zero
+
+the largest power of two that is smaller than 359 is 256, or 2 to the 8 bracket the next larger power of two would be 512, which is larger than 359 bracket. subtracting 256 from 359 gives us 103 bracket $359 - 256 equals 103 bracket, so now we have
+$359 equals to the 8 * 1 + 103
+
+now we apply the same procedure to 103. the largest power of two that is smaller than 103.64, or two to the 6. that means that there is no factor for 2 to the 7, so that digits value is 0. subtracting 64 from 103 gives us 39
+now we have
+$359 = 2 ^ 8 * 1 + 2 ^ 7 * 0 + 2 ^ 6 * 1 + 39
+
+repeating the procedure for 39 we find that the largest power of two smaller than 39 is 32 or 2 to the 5. subtracting 32 from 39 gives us 7
+so now we have
+359 = 2 ^ 8 * 1 + 2 ^ 7 * 0 + 2 ^ 6 * 1 + 2 ^ 5 * 1 + 7
+
+repeating the procedure for 7:00 the largest power of two smaller than 7 is 2 to the 2, or four. that means that there are no factors for 24 or 2 to the 3, so the value for each of those digits is zero. subtracting 4 from 7 gives us three so now we have
+359 equals 2 ^ 8 * 1 + 2 ^ 7 * 0 + 2 ^ 6 * 1 + 2 ^ 5 * 1 + 2 ^ 4 * 0 + 2 ^ 3 * 0 + 2 ^ 2 * 1 + 3
+
+repeating the procedure for three the largest part of two smaller than 3 is 2, or two to the one, and now we have
+$359 = 2 ^ 8 * 1 + 2 ^ 7 * 0 + 2 ^ 6 * 1 + 2 ^ 5 * 1 + 2 ^ 4 * 0 + 2 ^ 3 * 0 + 2 ^ 2 * 1 + 2 ^ 1 * 1 plus one
+
+one is a power of two; it is t to the zero, so we finally have
+3159 = 2 ^ 8 * 1 + 2 ^ 7 * 0 + 2 ^ 6 * 1 + 2 ^ 5 * 1 + 2 ^ 4 * 0 + 2 ^ 3 * 0 + 2 ^ 2 * 1 + 2 ^ 1 * 1 + 2 ^ 0 * 1
+
+removing the power of two multipliers, 359 can be represented in the binary system as
+
+insert a table showing how each math equation for 359 has a 0 or 1 assigned to it giving us its binary number
+
+in a computer program we will use both positive and negative numbers. insert web page link and title: explains how negative numbers, such as -34, are represented in the binary system. in a computer program, we also use floating point numbers, such as 3.75. insert another link which goes to a page explaining how floating point numbers are represented using the binary system

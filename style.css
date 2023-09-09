@@ -1,4 +1,10 @@
 
+/*Body*/
+body {
+	background-color: FAE6B1;
+	
+}
+
 /*Border for table, th, td*/
 table, th, td {
 	border: 2px inset green;
@@ -6,14 +12,18 @@ table, th, td {
 	
 /*Header1*/
 h1 {
-	color: red;
+	color: FFA101;
 	text-align: center;
 }
 
-/*Header5*/
-h5 {
-	color: pink;
-	text-align: center;
+/*Header3*/
+h3 {
+	color: B3DEE5;
+}
+
+/*Header4*/
+h4 {
+	color: 31525B;
 }
 
 /*Table Titles*/
@@ -38,4 +48,20 @@ table {
 /*Table Row Alternate Color*/
 tbody tr:nth-child(even) {
 	background-color: yellow;
+}
+
+/*List Item*/
+li {
+	color: 31525B
+}
+
+/*Paragraph*/
+p {
+	padding: 5px;
+}
+
+/*Images*/
+img {
+	max-width: 100%;
+	height: auto;
 }
