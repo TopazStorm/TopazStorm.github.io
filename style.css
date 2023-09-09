@@ -12,18 +12,18 @@ table, th, td {
 	
 /*Header1*/
 h1 {
-	color: FFA101;
+	color: #FFA101;
 	text-align: center;
 }
 
 /*Header3*/
 h3 {
-	color: B3DEE5;
+	color: #B3DEE5;
 }
 
 /*Header4*/
 h4 {
-	color: 31525B;
+	color: #31525B;
 }
 
 /*Table Titles*/
@@ -52,7 +52,7 @@ tbody tr:nth-child(even) {
 
 /*List Item*/
 li {
-	color: 31525B
+	color: #31525B
 }
 
 /*Paragraph*/
